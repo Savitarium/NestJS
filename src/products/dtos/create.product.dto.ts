@@ -10,7 +10,7 @@ import {
 export class CreateProductDTO {
   @IsNotEmpty()
   @IsString()
-  @Length(10, 20)
+  @Length(1, 20)
   name: string;
 
   @IsNotEmpty()

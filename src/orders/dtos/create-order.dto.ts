@@ -1,9 +1,7 @@
 import {
   IsNotEmpty,
-  IsString,
-  //  Length,
-  IsUUID,
-} from 'class-validator';
+  IsString, IsUUID
+} from "class-validator";
 
 export class CreateOrderDTO {
   client: string;
@@ -12,9 +10,5 @@ export class CreateOrderDTO {
   @IsUUID()
   @IsString()
   productId: string;
-
-  @IsNotEmpty()
-  @IsUUID()
-  @IsString()
   clientId: string;
 }
